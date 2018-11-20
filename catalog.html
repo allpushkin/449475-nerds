@@ -1,182 +1,180 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <title>Нёрдс</title>
+    </head>
 
-    <header class="main-header">
-        <nav class="main-navigation">
-            <a href="#"" class="main-header-logo">
-                <img src="http://Логотип/160x60" alt="Логотип студии «Nerds»">
-            </a>
-            <div class="main-navigation-wrapper">
-                <ul class="site-navigation">
-                    <li class="site-navigation-item"><a href="index.html">Студия</a></li>
-                    <li class="site-navigation-item"><a href="#">Клиенты</a></li>
-                    <li class="site-navigation-item current"><a href="#">Магазин</a></li>
-                    <li class="site-navigation-item"><a href="#">Контакты</a></li>
-                </ul>
-                <ul class="basket">
-                    <li class="basket-item">
-                    <a class="basket-link" href="#">Корзина</a>
+    <body>
+        <header class="main-header">
+            <nav class="main-navigation">
+                <a href="index.html" class="main-header-logo">
+                    <img src="http://Логотип/160x60" alt="Логотип студии «Nerds»">
+                </a>
+                <div class="main-navigation-wrapper">
+                    <ul class="site-navigation">
+                        <li><a href="index.html">Студия</a></li>
+                        <li><a href="#">Клиенты</a></li>
+                        <li class="site-navigation-current"><a href="#">Магазин</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <ul class="basket">
+                        <li class="basket-item">
+                        <a class="basket-link" href="#">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container">
+            <div class="page-title slogan">
+                <h1>Магазин готовых шаблонов</h1>
+            </div>
+            <section class="filters">
+                <h2 class="visually-hidden">Фильтр шаблонов</h2>
+                <!-- Здесь будет форма -->    
+                <div class="web">
+                    <h3>Сетка:</h3>
+                    <span class="label">Адаптивная</span>
+              
+                    <span class="label">Фиксированная</span>
+              
+                    <span class="label">Резиновая</span>
+                </div>
+                <!-- Здесь будет форма -->
+                <div class="features">
+                    <h3>Особенности:</h3>
+              
+                    <span class="label">Слайдер</span>
+              
+                    <span class="label">Блок преимуществ</span>
+              
+                    <span class="label">Новости</span>
+              
+                    <span class="label">Галерея</span>
+              
+                    <span class="label">Корзина</span>
+                </div>
+
+                <button class="btn" type="submit">Показать</button>
+            </section>
+
+            <section class="catalog">
+                <h2 class="visually-hidden">Список щаблонов</h2>
+                <ul class="catalog-list">
+                    <li class="layout">
+                        <p class="layout-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        <p>
+                        <p class="image-content">
+                            <img src="http://Pink-APP/360x576" alt="Pink APP" >
+                        </p>
+                        <div class="layout-menu">
+                            <h3>Pink APP</h3>
+                            <p>Продуктовый лендинг приложения для iOS и Android</p>
+                            <button class="btn" type="submit">9 900 руб.</button>
+                        </div>
+                    </li>
+                    <li class="layout">
+                        <p class="layout-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        <p>
+                        <p class="image-content">
+                            <img src="http://Barbershop/360x576" alt="Barbershop">
+                        </p>
+                        <div class="layout-menu">
+                            <h3>Barbershop</h3>
+                            <p>Сайт салона красоты. Для мужчин, да.</p>
+                            <button class="btn" type="submit">9 900 руб.</button>
+                        </div>
+                    </li>
+                    <li class="layout">
+                        <p class="layout-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        <p>
+                        <p class="image-content">
+                            <img src="http://Mishka/360x576" alt="Mishka" >
+                        </p>
+                        <div class="layout-menu">
+                            <h3>Mishka</h3>
+                            <p>Интернет-магазин вязаных игрушек</p>
+                            <button class="btn" type="submit">9 900 руб.</button>
+                        </div>
+                    </li>
+                    <li class="layout">
+                        <p class="layout-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        <p>
+                        <p class="image-content">
+                            <img src="http://A-Pluss/360x576" alt="A Plus">
+                        </p>
+                        <div class="layout-menu">
+                            <h3>A Plus</h3>
+                            <p>Лендинг курсов повышения квалификации</p>
+                            <button class="btn" type="submit">9 900 руб.</button>
+                        </div>
+                    </li>
+                    <li class="layout">
+                        <p class="layout-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        <p>
+                        <p class="image-content">
+                            <img src="http://Kvast/360x576" alt="Kvast">
+                        </p>
+                        <div class="layout-menu">
+                            <h3>Кваст</h3>
+                            <p>Промо-сайт производителя крафтового кваса</p>
+                            <button class="btn" type="submit">9 900 руб.</button>
+                        </div>
                     </li>
                 </ul>
-            </div>
-        </nav>
-    </header>
+            </section>
+        </main>
 
-        <div class="page-title slogan">
-        <h1>Магазин готовых шаблонов</h1>
-        </div>
-
-    <main class="container">
-        <div class="form">
-    	    <div class="web">
-                <h2>Сетка:</h2>
-                <span class="label">Адаптивная</span>
-              
-                <span class="label">Фиксированная</span>
-              
-                <span class="label">Резиновая</span>
+        <footer class="main-footer">
+            <div class="main-social">
+                <ul class="social">
+                    <li class="icon-item">
+                        <a class="icon" href="#">
+                        <span class="circle vk"></span>
+                        </a>
+                    </li>    
+                    <li class="icon-item">
+                        <a class="icon" href="#">
+                        <span class="circle fb"></span>
+                        </a>
+                    </li>
+                    <li class="icon-item">
+                        <a class="icon" href="#">
+                        <span class="circle insta"></span>
+                        </a>
+                    </li> 
+                </ul>
+                <div class="footer-slogan">
+                    <b>Давайте дружить, это выгодно!</b>
+                    <p>Скидка 10% для друзей из социальных сетей.</p>
+                </div>
             </div>
-        
-            <div class="features">
-                <h2>ОСОБЕННОСТИ:</h2>
-              
-                <span class="label">Слайдер</span>
-              
-                <span class="label">Блок преимуществ</span>
-              
-                <span class="label">Новости</span>
-              
-                <span class="label">Галерея</span>
-              
-                <span class="label">Корзина</span>
-            </div>
+        </footer>
 
-            <button class="btn" type="submit">Показать</button>
-        </div>
+        <section class="modal feedback">
+            <h2>Напишите нам</h2>
+            <!-- Здесь будет форма -->
+            <span class="feedback-close">x</span>
+            <span class="feedback-btn">Отправить</span>
+        </section>  
 
-        <article class="layout">
-            <div class="layout-top">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="image-content">
-                <img src="http://Pink APP/360x576" alt="Pink APP" >
-            </div>
-            <div class="layout-menu">
-                <h2>Pink APP</h2>
-
-                <p>Продуктовый лендинг приложения для iOS и Android</p>
-
-                <button class="btn" type="submit">9 900 руб.</button>
-            </div>
-        </article>
-
-        <article class="layout">
-            <div class="layout-top">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="image-content">
-                <img src="http://Barbershop/360x576" alt="Barbershop" >
-            </div>
-            <div class="layout-menu">
-                <h2>Barbershop</h2>
-
-                <p>Сайт салоны красоты. Для мужчин, да.</p>
-
-                <button class="btn" type="submit">9 900 руб.</button>
-            </div>
-        </article>
-
-        <article class="layout">
-            <div class="layout-top">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="image-content">
-                <img src="http://Mishka/360x576" alt="Mishka" >
-            </div>
-            <div class="layout-menu">
-                <h2>Mishka</h2>
-
-                <p>Интернет-магазин вязаных игрушек</p>
-
-                <button class="btn" type="submit">9 900 руб.</button>
-            </div>
-        </article>
-
-        <article class="layout">
-            <div class="layout-top">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="image-content">
-                <img src="http://A-Pluss/360x576" alt="A Plus">
-            </div>
-            <div class="layout-menu">
-                <h2>A Plus</h2>
-
-                <p>Лендинг курсов повышения квалификации</p>
-
-                <button class="btn" type="submit">9 900 руб.</button>
-            </div>
-        </article>
-
-        <article class="layout">
-            <div class="layout-top">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="image-content">
-                <img src="http://Kvast/360x576" alt="Kvast">
-            </div>
-            <div class="layout-menu">
-                <h2>КВАСТ</h2>
-
-                <p>Промо-сайт производителя крафтового кваса</p>
-
-                <button class="btn" type="submit">9 900 руб.</button>
-            </div>
-        </article>    
-
-    </main>
-
-    <footer class="main-footer">
-        <div class="main-social">
-            <div class="social">
-                <a class="icon" href="#">
-                <span class="circle vk"></span>
-                </a>
-                <a class="icon" href="#">
-                 <span class="circle fb"></span>
-                </a>
-                <a class="icon" href="#">
-                <span class="circle insta"></span>
-                </a>
-            </div>
-            <div class="footer-slogan">
-                <b>Давайте дружить, это выгодно!</b>
-                <p>Скидка 10% для друзей из социальных сетей.</p>
-            </div>
-        </div>
-    </footer>	
+    </body>
     
-    <section class="feedback">
-        <h2>Напишите нам</h2>
-        <!-- Здесь будет форма -->
-      <span class="feedback-close">x</span>
-      <span class="feedback-btn">Отправить</span>
-    </section>
-
-</body>
 </html>
