@@ -9,7 +9,7 @@
         <header class="main-header">
             <nav class="main-navigation">
                 <a href="index.html" class="main-header-logo">
-                    <img src="http://Логотип/160x60" alt="Логотип студии «Nerds»">
+                    <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Nerds»">
                 </a>
                 <div class="main-navigation-wrapper">
                     <ul class="site-navigation">
@@ -31,33 +31,53 @@
             <div class="page-title slogan">
                 <h1>Магазин готовых шаблонов</h1>
             </div>
-            <section class="filters">
+             <section class="filters">
                 <h2 class="visually-hidden">Фильтр шаблонов</h2>
-                <!-- Здесь будет форма -->    
-                <div class="web">
-                    <h3>Сетка:</h3>
-                    <span class="label">Адаптивная</span>
-              
-                    <span class="label">Фиксированная</span>
-              
-                    <span class="label">Резиновая</span>
-                </div>
-                <!-- Здесь будет форма -->
-                <div class="features">
-                    <h3>Особенности:</h3>
-              
-                    <span class="label">Слайдер</span>
-              
-                    <span class="label">Блок преимуществ</span>
-              
-                    <span class="label">Новости</span>
-              
-                    <span class="label">Галерея</span>
-              
-                    <span class="label">Корзина</span>
-                </div>
-
-                <button class="btn" type="submit">Показать</button>
+                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+                        <legend>Сетка:</legend>
+                         <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="web-types" value="adaptive" id="filter-adaptive" checked>
+                                <label for="filter-adaptive">Адаптивная</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="web-types" value="fixed" id="filter-fixed">
+                                <label for="filter-fixed">Фиксированная</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="web-types" value="fluid" id="filter-fluid">
+                                <label for="filter-fluid">Резиновая</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Особенности:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox"type="checkbox" name="slider" id="filter-slider" checked>
+                                <label for="filter-slider">Слайдер</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox"type="checkbox" name="preference" id="filter-preference">
+                                <label for="filter-preference">Блок преимуществ</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox"type="checkbox" name="news" id="filter-news" checked>
+                                <label for="filter-news">Новости</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox"type="checkbox" name="gallery" id="filter-gallery">
+                                <label for="filter-gallery">Галерея</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox"type="checkbox" name="basket" id="filter-basket">
+                                <label for="filter-basket">Корзина</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit" class="filter-button button">Показать</button>
+                </form>
             </section>
 
             <section class="catalog">
@@ -70,7 +90,7 @@
                             <span></span>
                         <p>
                         <p class="image-content">
-                            <img src="http://Sedona/360x576" alt="Sedona">
+                            <img src="img/img-sedona.png" width="360" height="576" alt="Sedona">
                         </p>
                         <div class="layout-menu">
                             <h3>
@@ -87,7 +107,7 @@
                             <span></span>
                         <p>
                         <p class="image-content">
-                            <img src="http://Pink-APP/360x576" alt="Pink APP" >
+                            <img src="img/img-pink.png" width="360" height="576" alt="Pink APP">
                         </p>
                         <div class="layout-menu">
                             <h3>
@@ -104,7 +124,7 @@
                             <span></span>
                         <p>
                         <p class="image-content">
-                            <img src="http://Barbershop/360x576" alt="Barbershop">
+                            <img src="img/img-barbershop.png" width="360" height="576" alt="Barbershop">
                         </p>
                         <div class="layout-menu">
                             <h3>
@@ -121,7 +141,7 @@
                             <span></span>
                         <p>
                         <p class="image-content">
-                            <img src="http://Mishka/360x576" alt="Mishka" >
+                            <img src="img/img-mishka.png" width="360" height="576" alt="Mishka">
                         </p>
                         <div class="layout-menu">
                             <h3>
@@ -138,7 +158,7 @@
                             <span></span>
                         <p>
                         <p class="image-content">
-                            <img src="http://A-Pluss/360x576" alt="A Plus">
+                            <img src="img/img-aplus.png" width="360" height="576" alt="A Plus">
                         </p>
                         <div class="layout-menu">
                             <h3>
@@ -155,7 +175,7 @@
                             <span></span>
                         <p>
                         <p class="image-content">
-                            <img src="http://Kvast/360x576" alt="Kvast">
+                            <img src="img/img-kvast.png" width="360" height="576" alt="Kvast">
                         </p>
                         <div class="layout-menu">
                             <h3>
@@ -194,9 +214,27 @@
 
         <section class="modal feedback">
             <h2>Напишите нам</h2>
-            <!-- Здесь будет форма -->
-            <span class="feedback-close">x</span>
-            <span class="feedback-btn">Отправить</span>
+            <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                    <label class="feedback-data" for="feedback-login">Ваше имя:
+                    </label>
+                    <input class="feedback-icon-user" id="feedback-login" type="text" name="login" placeholder="Имя Фамилия">
+                </p>
+                <p>
+                    <label class="feedback-data" for="feedback-email">Ваш e-mail:
+                    </label>
+                    <input class="feedback-icon-email" id="feedback-email" type="email" name="email"
+                    placeholder="email@example.com">
+                </p>
+                <p>
+                    <label class="feedback-data" for="feedback-textarea">Текст письма:
+                    </label>
+                    <textarea name="text" id="feedback-textarea" placeholder="В свободной форме" required rows="5">
+                    </textarea>
+                </p>
+                <button class="button feedback-btn" type="submit">Отправить</button>
+            </form>
+            <button class="feedback-close" type="button">Закрыть</button>
         </section>  
 
     </body>
