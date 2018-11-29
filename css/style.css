@@ -1,0 +1,253 @@
+html, body {
+  margin: 0;
+  min-width: 1200px;
+  padding: 0;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  border: none;
+}
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.main-navigation {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+}
+
+.site-navigation,
+.basket {
+  list-style: none;
+}
+
+.site-navigation a,
+.basket-item a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.basket-item a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:focus,
+.basket-item a:focus {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.basket-item a:active {
+  color: #a6a6a6;  
+}
+
+
+.main-header-logo:hover {
+  opacity: 0.8;
+}
+
+.main-header-logo:focus {
+  opacity: 0.8;
+}
+
+.main-header-logo:active {
+  opacity: 0.3; 
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages-item {
+  text-align: left;
+}
+
+.advantages-item h3 {
+  font-size:18px;
+  text-transform: uppercase; 
+}
+
+.advantages-item p {
+  font-size:16px;
+}
+
+.advantages-list .button {
+  font-size:16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+
+.advantages li:first-child .button {
+  background-color: #fb565a;
+  color: #ffffff;
+}  
+
+.advantages li:first-child .button:hover {
+  background-color: #e74246;
+  color: #ffffff;
+}
+
+.advantages li:first-child .button:focus {
+  background-color: #e74246;
+  color: #ffffff;
+}  
+
+ .advantages li:first-child .button:active {
+  background-color: #d7373b;
+  color: #e37375;
+}
+
+.advantages  li:nth-child(2) .button {
+  background-color: #00ca74;
+  color: #ffffff;
+}
+
+.advantages  li:nth-child(2) .button:hover {
+  background-color: #00bc6c;
+  color: #ffffff;
+}
+
+.advantages  li:nth-child(2) .button:focus {
+  background-color: #00bc6c;
+  color: #ffffff;
+}
+
+.advantages  li:nth-child(2) .button:active{
+  background-color: #00aa62;
+  color: #4dc491;
+}
+
+.advantages  li:last-child .button {
+  background-color: #efc84a;
+  color: #ffffff;
+}
+
+.advantages  li:last-child .button:hover {
+  background-color: #eab534;
+  color: #ffffff;
+}
+
+.advantages  li:last-child .button:focus {
+  background-color: #eab534;
+  color: #ffffff;
+}
+
+.advantages  li:last-child .button:active {
+  background-color: #e5a722;
+  color: #ecbe5c;
+}
+
+.main-footer {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.footer-slogan b {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer-slogan p {
+  line-height: 22px;
+  color: #444444;
+}
+
+.main-social ul {
+  list-style: none;
+}
+
+/* ============================ CATALOG.HTML ========================== */
+
+.modal {
+  display: none;
+}
+
+.layout-menu {
+  display: none;
+}
+
+.page-title {
+  text-align: center;
+  color: #000000;
+}
+
+.slogan h1 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.filter ul {
+  list-style: none;
+  font-size: 16px;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #000000;
+  opacity: 0.8;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+  opacity: 0.5;
+}
+
+.filters .button {
+  font-weight: 500;
+  background-color: #eeeeee;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+.catalog ul {
+  list-style: none;
+}
