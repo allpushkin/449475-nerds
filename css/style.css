@@ -47,6 +47,11 @@ a {
   background-color: #eeeeee;
 }
 
+.main-navigation .current {
+  border-bottom: 2px solid #fb565a;
+  padding-bottom: 8px;
+}
+
 .site-navigation,
 .basket {
   list-style: none;
@@ -57,13 +62,13 @@ a {
   color: #000000;
 }
 
-.site-navigation a:hover,
-.basket-item a:hover {
+.site-navigation a:focus,
+.basket-item a:focus {
   color: #fb565a;
 }
 
-.site-navigation a:focus,
-.basket-item a:focus {
+.site-navigation a:hover,
+.basket-item a:hover {
   color: #fb565a;
 }
 
@@ -72,12 +77,11 @@ a {
   color: #a6a6a6;  
 }
 
-
-.main-header-logo:hover {
+.main-header-logo:focus {
   opacity: 0.8;
 }
 
-.main-header-logo:focus {
+.main-header-logo:hover {
   opacity: 0.8;
 }
 
@@ -111,63 +115,62 @@ a {
   border-radius: 3px;
 }
 
-
-.advantages li:first-child .button {
+.web-button {
   background-color: #fb565a;
   color: #ffffff;
 }  
 
-.advantages li:first-child .button:hover {
+.web-button:focus {
   background-color: #e74246;
   color: #ffffff;
 }
 
-.advantages li:first-child .button:focus {
+.web-button:hover {
   background-color: #e74246;
   color: #ffffff;
 }  
 
- .advantages li:first-child .button:active {
+ .web-button:active {
   background-color: #d7373b;
   color: #e37375;
 }
 
-.advantages  li:nth-child(2) .button {
+.advantages-button {
   background-color: #00ca74;
   color: #ffffff;
 }
 
-.advantages  li:nth-child(2) .button:hover {
+.advantages-button:focus {
   background-color: #00bc6c;
   color: #ffffff;
 }
 
-.advantages  li:nth-child(2) .button:focus {
+.advantages-button:hover {
   background-color: #00bc6c;
   color: #ffffff;
 }
 
-.advantages  li:nth-child(2) .button:active{
+.advantages-button:active{
   background-color: #00aa62;
   color: #4dc491;
 }
 
-.advantages  li:last-child .button {
+.presentation-button {
   background-color: #efc84a;
   color: #ffffff;
 }
 
-.advantages  li:last-child .button:hover {
+.presentation-button:focus {
   background-color: #eab534;
   color: #ffffff;
 }
 
-.advantages  li:last-child .button:focus {
+.presentation-button:hover {
   background-color: #eab534;
   color: #ffffff;
 }
 
-.advantages  li:last-child .button:active {
+.presentation-button:active {
   background-color: #e5a722;
   color: #ecbe5c;
 }
@@ -239,15 +242,176 @@ a {
   opacity: 0.5;
 }
 
-.filters .button {
+.filter-button {
   font-weight: 500;
-  background-color: #eeeeee;
+  background-color: #ededed;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
 }
 
+.filter-button:focus {
+  background-color: #dfdfdf;
+  color: #000000;
+}
+
+.filter-button:hover {
+  background-color: #dfdfdf;
+  color: #000000;
+}  
+
+ .filter-button:active {
+  background-color: #d5d5d5;
+  color: #a6a6a6;
+}
+
 .catalog ul {
   list-style: none;
+}
+
+/* ----- Сеточные стили ----- */
+
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 1750px;
+}
+
+.container {
+  position: relative;
+  width: 1160px;     
+  padding:0 0px; /*центровка содержимого браузера*/
+  margin:0 auto;
+}
+
+.main-header {
+  /* Временно для сетки */
+  min-height: 70px;
+  padding-top: 50px;
+}
+
+.main-navigation {
+  display: flex;
+  /* Временно для сетки */
+  /*min-height: 100px;*/
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+  margin-right:190px;
+  /* Временно для сетки */
+  /*display: block;*/
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-top: 26px;
+  width: 460px;
+  list-style: none;
+  
+  /* Временно для сетки */
+  min-height: 70px;
+}
+
+.basket {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 26px;
+  width: 80px;
+  list-style: none;
+   margin-left: auto;
+  /* Временно для сетки */
+  min-height: 70px;
+}
+
+.advantages {
+  width: 1100px;
+}
+
+.advantages-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 85px;
+  margin-top: 80px;
+  padding: 0;
+}
+
+.main-footer {
+  padding: 80px 0;
+}
+
+.main-social {
+  display: flex;
+
+
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-right: 160px;
+  width: 260px;
+}
+
+
+
+.page-title {
+  margin: 0;
+  padding-bottom: 15px;
+
+  /* Временно для сетки */
+  min-height: 42px;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 260px;
+
+  /* Временно для сетки */
+  min-height: 510px;
+}
+
+.catalog {
+  width: 760px;
+
+  /* Временно для сетки */
+  min-height:2050px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.layout {
+  margin: 0;
+  padding: 0;
+  width: 360px;
+
+  /* Временно для сетки */
+  min-height: 615px;
+  margin-bottom: 35px;
+  margin-right: 40px;
+}
+
+.layout:nth-child(even) {
+  margin-right: 0;
 }
