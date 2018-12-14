@@ -51,12 +51,14 @@ input[type="radio"].visually-hidden {
   color: #000000;
   vertical-align: middle;
   text-transform: uppercase;
-
+  border-radius: 3px;
   background-color: #ffffff;
   border: none;
 }
 
 .main-header {
+  margin: 0;
+  padding: 0;
   background-color: #eeeeee;
 }
 
@@ -114,8 +116,152 @@ input[type="radio"].visually-hidden {
   opacity: 0.3; 
 }
 
-/* ====================================================== */
+/* =====================Слайдер========================== */
 
+.slider {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+  
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider-controls i {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls i::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.slider-controls .active::before {
+  content: "";
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.slider-item {
+  display: none;
+  padding: 78px 0 80px 0;
+}
+
+.slider-item:nth-child(1) {
+  display: block;
+}
+
+.slider-item:nth-child(1) {
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: 93% 18px;
+}
+
+.slider-item:nth-child(2) {
+  background-image: url("../img/slide2.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.slider-item:nth-child(3) {
+  background-image: url("../img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20px;
+}
+
+.slider-item h3 {
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.slider-item p {
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.button {
+  display: block;
+  width: 240px;
+  padding: 13px 0;
+  
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  
+  background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+
+
+
+/* ====================================================== */
 .page-title {
   background-color: #eeeeee;
   border: 1px solid #eeeeee;
@@ -329,11 +475,15 @@ body {
 }
 
 .main-header {
+  margin: 0;
+  padding: 0;
   padding-top: 55px;
 }
 
 .main-navigation {
   display: flex;
+  margin: 0;
+  padding: 0;
   padding-bottom: 15px;
 }
 
@@ -418,8 +568,6 @@ body {
   padding: 10px 0;
   border-radius: 3px;
 }
-
-
 
 /* =================================================== */
 
@@ -672,12 +820,120 @@ body {
 
 /* ----- Сеточные стили catalog----- */
 
+.filter-item {
+  margin: 0;
+  padding: 0;
+ 
+  border: none;
+}
+
+.filter-item legend {
+  margin: 0;
+  padding: 0
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-filter {
+  margin: 0;
+  padding: 0;
+  width: 260px;
+  margin-top: 13px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+/*
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+*/
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
 
 .page-title {
+  padding: 0;
   margin: 0;
   padding-bottom: 15px;
-
-  /* Временно для сетки */
+  margin-bottom: 75px;
   min-height: 42px;
 }
 
@@ -687,6 +943,8 @@ body {
 }
 
 .filters {
+  padding: 0;
+  margin: 0;
   width: 260px;
 }
 
@@ -789,8 +1047,6 @@ body {
   border-radius: 50%;
 }
 
-
-
 .filter-button {
   display: block;
   margin-top: 50px;
@@ -825,9 +1081,114 @@ body {
 
 .catalog {
   width: 765px;
-  margin-top: 30px;
-  /* Временно для сетки */
+  padding: 0;
+  margin: 0;
   
+}
+
+.sorting {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 760px;
+  margin-bottom: 49px;
+}
+
+.sorting-value {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 360px;
+  list-style: none;
+  margin-right:45px;
+}
+
+.sorting-turn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 45px;
+  list-style: none;
+}
+
+.sorting-value a {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.3;
+  text-decoration: none;
+}
+
+.sorting-value a:focus {
+  opacity: 0.7;
+}
+
+.sorting-value a:hover {
+  opacity: 0.7;
+}
+
+.sorting-value a:active {
+  opacity: 1;
+}
+
+.sorting-value :last-child a {
+    margin-right: 0;
+}
+
+.icon-down path {
+  fill: #ededed;
+}
+
+.icon-up path {
+  fill: #ededed;
+}
+
+.icon-down:focus path {
+  fill: #a6a6a6;
+}
+
+.icon-up:focus path {
+  fill: #a6a6a6;
+}
+
+.icon-down:hover path {
+  fill: #a6a6a6;
+}
+
+.icon-up:hover path {
+  fill: #a6a6a6;
+}
+
+.icon-down:active path {
+  fill: #000000;
+}
+
+.icon-up:active path {
+  fill: #000000;
+}
+
+a.current {
+  opacity: 1;
+}
+
+a.current path {
+  fill: #000000;
+}
+
+.sorting legend {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  padding-top: 6px;
+  margin-right:270px;
 }
 
 .catalog-list {
@@ -923,6 +1284,18 @@ body {
   color: #ffffff;
 }
 
+.layout-menu .btn:focus {
+  background: #e74246;
+}
+
+.layout-menu .btn:hover {
+  background: #e74246;
+}
+
+.layout-menu .btn:active {
+  background: #d7373b;
+}
+
 .layout-menu h3 {
   margin-top: 27px;
   margin-bottom: 26px;
@@ -948,4 +1321,60 @@ body {
 
 .layout:hover > .layout-top {
   background-color: #4d4d4d;
+}
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  
+  padding: 0;
+  margin: 0;
+  margin-top: 60px;
+
+  list-style: none;
+}
+
+.pagination-item {
+  margin-right: 5px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+.pagination-item a {
+  display: block;
+  padding: 17px 25px;
+  
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+  background-color: #d5d5d5;
+  color: #a9a9a9;
+  border-top: 2px solid #bfbfbf;
+}
+
+.pagination-item-current a {
+  color: #000000;
+
+  background-color: #ffffff;
+  border: 2px solid #dbdbdb;
+  box-sizing: border-box;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #000000;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 2px solid #dbdbdb;
 }
