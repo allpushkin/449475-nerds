@@ -569,10 +569,210 @@ body {
   border-radius: 3px;
 }
 
-/* =================================================== */
+/* ===================information===================== */
+
+.information {
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.information {
+  border-top: 2px solid #eeeeee;
+}
+
+.stat-info .column {
+  display: inline-block;
+}
+
+.info {
+  min-width: 670px;
+  margin-right: 130px;
+}
+
+.info .slogan {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.info p {
+  margin-top: 35px;
+}
+
+.info h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-top: 40px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.dev-orders {
+  list-style-type: none;
+  margin-top: 23px;
+}
+
+.dev-orders li {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.dev-orders li::before {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: -35px;
+
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+}
+
+.statistic {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.statistic .logo {
+  margin-top: -32px;
+}
+
+.statistic > span {
+  margin-top: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.stat-info {
+  display: flex;
+  margin-top: 45px;
+}
+
+.stat-info .column {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.column b {
+  font-size: 45px;
+  line-height: 10px;
+  color: #000000;
+}
+
+.column .percent {
+  font-size: 28px;
+  vertical-align: super;
+}
+
+.column p {
+  line-height: 18px;
+}
+
+.logo {
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.logotypes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 65px;
+  list-style: none;
+}
+
+.brand {
+  opacity: 0.5;
+}
+
+.brand:hover {
+  opacity: 1;
+}
+
+.brand:focus {
+  opacity: 1;
+}
+
+.brand:active {
+  opacity: 0.2; 
+}
+
+
+/* ===================footer========================== */
 
 .main-footer {
   padding: 75px 0;
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 416px;
+  background-image: url(../img/map.jpg);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px; 
+}
+
+.info-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  position:absolute;
+  width: 320px;
+  min-height: 310px;
+  padding: 0 40px;
+  padding-top: 40px;
+  padding-bottom: 47px;
+  background: white;
+  bottom: 55px;
+  left: 260px;
+  box-sizing: border-box;
+}
+
+.info-cloud-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.info-cloud-text {
+  color: #666666;
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 0;
+  margin-bottom: 19px;
+}
+
+.open-feedback {
+  display: block;  
+  margin: 0;
+  padding: 0
+  width: 210px;
+  padding:12px 5px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 3px;
+  background-color: #fb565a;
+  margin-top: 29px;
+}
+
+.info-cloud a:hover {
+  background: #d6494d;
+}
+
+.info-cloud a:active {
+  background: #b63538;
+  box-shadow: inset 0 3px #9b2d30;
 }
 
 .main-social {
