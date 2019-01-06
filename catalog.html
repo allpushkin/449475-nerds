@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>Нёрдс</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -31,23 +30,20 @@
         </header>
 
         <main class="master">
-            <div class="page-title slogan">
-                <h1>Магазин готовых шаблонов</h1>
-            </div>
+            <h1 class="page-title">Магазин готовых шаблонов</h1>
             <div class="catalog-columns container">
                 <section class="filters">
                     <h2 class="visually-hidden">Фильтр шаблонов</h2>
                     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-
-                        <fieldset class="filter-item">
+                        <fieldset class="filter-price">
                             <legend>Стоимость:</legend>
                                 <div class="range-filter">
                                     <div class="range-controls">
                                         <div class="scale">
                                             <div class="bar" style="margin-left: 20%; width: 30%"></div>
                                         </div>
-                                        <div class="toggle toggle-min"></div>
-                                        <div class="toggle toggle-max"></div>
+                                        <div class="toggle toggle-min"><span class="visually-hidden">Движок минимум</span></div>
+                                        <div class="toggle toggle-max"><span class="visually-hidden">Движок максимум</span></div>
                                     </div>
                                     <div class="price-controls">
                                         <label class="min-price">от <input name="min-price" type="text" value="0"></label>
@@ -55,7 +51,7 @@
                                     </div>
                                 </div>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="filter-grid">
                             <legend>Сетка:</legend>
                             <ul>
                                 <li class="filter-option">
@@ -72,7 +68,7 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="filter-features" >
                             <legend>Особенности:</legend>
                             <ul>
                                 <li class="filter-option">
@@ -80,7 +76,7 @@
                                     <label for="filter-slider">Слайдер</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="preference" id="filter-preference" disabled>
+                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="preference" id="filter-preference">
                                     <label for="filter-preference">Блок преимуществ</label>
                                 </li>
                                 <li class="filter-option">
@@ -103,7 +99,6 @@
 
                 <section class="catalog">
                     <h2 class="visually-hidden">Список шаблонов</h2>
-
                     <div class="sorting">
                         <p>Сортировать:</p>   
                         <ul class="sorting-value">
@@ -127,14 +122,14 @@
                                 <span></span>
                             </div>
                             <div class="image-content">
-                                <img src="img/img-sedona.png" width="360" height="576" alt="Sedona">
+                                <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
                             </div>
                             <div class="layout-menu">
                                 <h3>
                                     <a href="#">Sedona</a>
                                 </h3>
                                 <p>Информационный сайт для туристов</p>
-                                <button class="button btn" type="button">9 900 руб.</button>
+                                <a href="#" class="cost btn">9 900 руб.</a>
                             </div>
                         </li>
                         <li class="layout">
@@ -144,14 +139,14 @@
                                 <span></span>
                             </div>
                             <div class="image-content">
-                                <img src="img/img-pink.png" width="360" height="576" alt="Pink APP">
+                                <img src="img/img-pink.jpg" width="360" height="576" alt="Pink APP">
                             </div>
                             <div class="layout-menu">
                                 <h3>
                                     <a href="#">Pink APP</a>
                                 </h3>
                                 <p>Продуктовый лендинг приложения для iOS и Android</p>
-                                <button class="button btn" type="button">9 900 руб.</button>
+                                <a href="#" class="cost btn">9 900 руб.</a>
                             </div>
                         </li>
                         <li class="layout">
@@ -161,14 +156,14 @@
                                 <span></span>
                             </div>
                             <div class="image-content">
-                                <img src="img/img-barbershop.png" width="360" height="576" alt="Barbershop">
+                                <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
                             </div>
                             <div class="layout-menu">
                                 <h3>
                                     <a href="#">Barbershop</a>
                                 </h3>
                                 <p>Сайт салона красоты. Для мужчин, да.</p>
-                                <button class="button btn" type="button">9 900 руб.</button>
+                                <a href="#" class="cost btn">9 900 руб.</a>
                             </div>
                         </li>
                         <li class="layout">
@@ -178,14 +173,14 @@
                                 <span></span>
                             </div>
                             <div class="image-content">
-                                <img src="img/img-mishka.png" width="360" height="576" alt="Mishka">
+                                <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
                             </div>
                             <div class="layout-menu">
                                 <h3>
                                     <a href="#">Mishka</a>
                                 </h3>
                                 <p>Интернет-магазин вязаных игрушек</p>
-                                <button class="button btn" type="button">9 900 руб.</button>
+                                <a href="#" class="cost btn">9 900 руб.</a>
                             </div>
                         </li>
                         <li class="layout">
@@ -195,14 +190,14 @@
                                 <span></span>
                             </div>
                             <div class="image-content">
-                                <img src="img/img-aplus.png" width="360" height="576" alt="A Plus">
+                                <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
                             </div>
                             <div class="layout-menu">
                                 <h3>
                                     <a href="#">A Plus</a>
                                 </h3>
                                 <p>Лендинг курсов повышения квалификации</p>
-                                <button class="button btn" type="button">9 900 руб.</button>
+                                <a href="#" class="cost btn">9 900 руб.</a>
                             </div>
                         </li>
                         <li class="layout">
@@ -212,14 +207,14 @@
                                 <span></span>
                             </div>
                             <div class="image-content">
-                                <img src="img/img-kvast.png" width="360" height="576" alt="Kvast">
+                                <img src="img/img-kvast.jpg" width="360" height="576" alt="Kvast">
                             </div>
                             <div class="layout-menu">
                                 <h3>
                                     <a href="#">Кваст</a>
                                 </h3>
                                 <p>Промо-сайт производителя крафтового кваса</p>
-                                <button class="button btn" type="button">9 900 руб.</button>
+                                <a href="#" class="cost btn">9 900 руб.</a>
                             </div>
                         </li>
                     </ul>
@@ -233,40 +228,40 @@
             </div>
 
             <section class="modal feedback">
-            <h2>Напишите нам</h2>
-            <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-                <div class="feedback-user">
+                <h2>Напишите нам</h2>
+                <form class="feedback-form" action="https://echo.htmlacademy.ru" id="feedback" method="post">
+                    <div class="feedback-user">
+                        <p class="feedback-item">
+                            <label class="feedback-title" for="feedback-login">Ваше имя:
+                            </label>
+                            <input class="feedback-username" id="feedback-login" type="text" name="login" placeholder="Имя Фамилия" required>
+                        </p>
+                        <p class="feedback-item">
+                            <label class="feedback-title" for="feedback-email-user">Ваш e-mail:
+                            </label>
+                            <input class="feedback-email" id="feedback-email-user" type="email" name="email" placeholder="email@example.com" required>
+                        </p>
+                    </div>
                     <p class="feedback-item">
-                        <label class="feedback-title" for="feedback-login">Ваше имя:
+                        <label class="feedback-title" for="feedback-textarea">Текст письма:
                         </label>
-                        <input class="feedback-username" id="feedback-login" type="text" name="login" placeholder="Имя Фамилия" required>
+                        <textarea name="text" class="feedback-text" id="feedback-textarea" placeholder="В свободной форме" required rows="5"></textarea>
                     </p>
-                    <p class="feedback-item">
-                        <label class="feedback-title" for="feedback-email-user">Ваш e-mail:
-                        </label>
-                        <input class="feedback-email" id="feedback-email-user" type="email" name="email" placeholder="email@example.com" required>
-                    </p>
-                </div>
-                <p class="feedback-item">
-                    <label class="feedback-title" for="feedback-textarea">Текст письма:
-                    </label>
-                    <textarea name="text" class="feedback-text" id="feedback-textarea" placeholder="В свободной форме" required rows="5"></textarea>
-                </p>
-                <button class="button feedback-btn" type="submit">Отправить</button>
-            </form>
-            <button class="feedback-close" type="button">Закрыть</button>
-        </section>  
+                    <button class="button feedback-btn" type="submit">Отправить</button>
+                </form>
+                <button class="feedback-close" type="button">Закрыть</button>
+            </section>  
         </main>
 
         <footer class="main-footer">
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.3720352490195!2d30.322419673400713!3d59.93885284412914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5!5e0!3m2!1sru!2sru!4v1473261241611" width="1200" height="416" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.3720352490195!2d30.322419673400713!3d59.93885284412914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5!5e0!3m2!1sru!2sru!4v1473261241611" style="border:0"></iframe>
                 <div class="info-cloud">
                     <p class="info-cloud-title">Nerds Design Studio</p>
-                    <p class="info-cloud-text">191186, Санкт-Петербург,<br>
+                    <p class="info-cloud-adr">191186, Санкт-Петербург,<br>
                                                 ул. Б. Конюшенная, д. 19/8</p>
-                    <p class="info-cloud-text">тел. +7 (812) 275-75-75</p>
-                    <a class="button open-feedback" href="#">Напишите нам</a>
+                    <p class="info-cloud-tel">тел. +7 (812) 275-75-75</p>
+                    <a class="button open-feedback" href="#feedback">Напишите нам</a>
                 </div>
             </div>
 
