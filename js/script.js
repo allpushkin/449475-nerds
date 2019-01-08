@@ -9,7 +9,7 @@ var isStorageSupport = true;
 var storage = "";
 
 try {
-    storage = localStorage.getItem("login");
+    storage = localStorage ? localStorage.getItem("login") : null;
 } catch (err) {
     isStorageSupport = false;
 }
@@ -17,11 +17,11 @@ try {
 open.addEventListener("click", function (event) {
     event.preventDefault(event);
     popup.classList.add("feedback-show");
-    login.focus();
     if (storage) {
         login.value = storage;
-    } else {
         email.focus();
+    } else {
+        login.focus();
     }
 });
 

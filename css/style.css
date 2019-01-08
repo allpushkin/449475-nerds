@@ -966,11 +966,6 @@ iframe {
   color: #000000;
 }
 
-.feedback-error {
-  -webkit-animation: shake 0.6s;
-  animation: shake 0.6s;
-}
-
 .feedback {
   display: none;
   top: 120px;
@@ -994,6 +989,11 @@ iframe {
   display: block;
   -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s;
+}
+
+.feedback-error {
+  -webkit-animation: shake 0.6s;
+  animation: shake 0.6s;
 }
 
 .feedback-form {
