@@ -224,31 +224,6 @@
                     </ul>
                 </section>
             </div>
-
-            <section class="modal feedback">
-                <h2>Напишите нам</h2>
-                <form class="feedback-form" action="https://echo.htmlacademy.ru" id="feedback" method="post">
-                    <div class="feedback-user">
-                        <p class="feedback-item">
-                            <label class="feedback-title" for="feedback-login">Ваше имя:
-                            </label>
-                            <input class="feedback-username" id="feedback-login" type="text" name="login" placeholder="Имя Фамилия" required>
-                        </p>
-                        <p class="feedback-item">
-                            <label class="feedback-title" for="feedback-email-user">Ваш e-mail:
-                            </label>
-                            <input class="feedback-email" id="feedback-email-user" type="email" name="email" placeholder="email@example.com" required>
-                        </p>
-                    </div>
-                    <p class="feedback-item">
-                        <label class="feedback-title" for="feedback-textarea">Текст письма:
-                        </label>
-                        <textarea name="text" class="feedback-text" id="feedback-textarea" placeholder="В свободной форме" required rows="5"></textarea>
-                    </p>
-                    <button class="button feedback-btn" type="submit">Отправить</button>
-                </form>
-                <button class="feedback-close" type="button">Закрыть</button>
-            </section>  
         </main>
 
         <footer class="main-footer">
@@ -259,7 +234,7 @@
                     <p class="info-cloud-adr">191186, Санкт-Петербург,<br>
                                                 ул. Б. Конюшенная, д. 19/8</p>
                     <p class="info-cloud-tel">тел. +7 (812) 275-75-75</p>
-                    <a class="button open-feedback" href="#feedback">Напишите нам</a>
+                    <a class="button open-feedback" href="feedback.html">Напишите нам</a>
                 </div>
             </div>
 
@@ -282,6 +257,31 @@
                 </div>
             </div>
         </footer>
+
+        <section class="modal feedback">
+            <h2>Напишите нам</h2>
+            <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="feedback-user">
+                    <p class="feedback-item">
+                        <label class="feedback-title" for="feedback-login">Ваше имя:
+                        </label>
+                        <input class="feedback-username" id="feedback-login" type="text" name="login" placeholder="Имя Фамилия">
+                    </p>
+                    <p class="feedback-item">
+                        <label class="feedback-title" for="feedback-email-user">Ваш e-mail:
+                        </label>
+                        <input class="feedback-email" id="feedback-email-user" type="email" name="email" placeholder="email@example.com">
+                    </p>
+                </div>
+                <p class="feedback-item">
+                    <label class="feedback-title" for="feedback-textarea">Текст письма:
+                    </label>
+                    <textarea name="text" class="feedback-text" id="feedback-textarea" placeholder="В свободной форме" rows="5"></textarea>
+                </p>
+                <button class="button feedback-btn" type="submit">Отправить</button>
+            </form>
+            <button class="feedback-close" type="button">Закрыть</button>
+        </section> 
          
         <script src="js/script.min.js"></script>
         

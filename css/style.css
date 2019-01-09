@@ -785,7 +785,6 @@ iframe {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  vertical-align: middle;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -968,7 +967,7 @@ iframe {
 
 .feedback {
   display: none;
-  top: 120px;
+  top: 20%;
   left: 50%;
   width: 960px;
   margin: 0 auto;
@@ -1445,6 +1444,16 @@ iframe {
 .filter-input:disabled + label {
   color: #000000;
   opacity: 0.5;
+}
+
+.filter-input-radio:focus+label::after,
+.filter-input-radio:hover+label::after {
+  background-color: #4d4d4d;
+}
+
+.filter-input-radio:focus+label::before,
+.filter-input-radio:hover+label::before {
+  border: 5px solid #4d4d4d;
 }
 
 /* =================================================== */
